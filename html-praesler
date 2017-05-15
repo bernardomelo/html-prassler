@@ -1,0 +1,9 @@
+import urllib3.request
+from bs4 import BeautifulSoup
+arq = open("HTML PATH HERE",'r')
+#ou source = urllib3.request.urlopen('URL  AQUI').read()
+#soup = bs.BeautifulSoup(sauce,'lxml')
+html = a.read()
+soup = BeautifulSoup(html,'lxml')
+for line in soup.find_all('p'):
+    print(line.text)
